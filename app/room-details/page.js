@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect,Suspense } from "react";
 
 import HotelDetails from "@/component/Bookingdetails/BookingComponent";
 
@@ -42,7 +42,7 @@ const ContentViewPage = () => {
     };
 
     fetchContent();
-  }, []);
+  }, [search]);
 
   if (error) {
     return <p>Error {error}</p>;
@@ -51,12 +51,13 @@ const ContentViewPage = () => {
   return (
     <>
  
-
+<Suspense fallback={<div>Loading...</div>}>
       <HotelDetails
         content={content}
         loading={loading}
         setLoading={setLoading}
       />
+      </Suspense>
     </>
   );
 };
