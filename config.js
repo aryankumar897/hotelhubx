@@ -43,3 +43,10 @@ module.exports = {
   PAYPAL_CLIENT_ID,
   PAYPAL_CLIENT_SECRET,
 };
+
+
+
+
+
+ // "react": "^19.0.0",
+    // "react-dom": "^19.0.0",
