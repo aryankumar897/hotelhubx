@@ -25,7 +25,7 @@ import SquareFootIcon from "@mui/icons-material/SquareFoot";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import HotelIcon from "@mui/icons-material/Hotel";
 import SendIcon from "@mui/icons-material/Send";
-
+import { Suspense } from 'react';
 import Rooms from "@/component/rooms/Rooms";
 import {
   bookingStyles,
@@ -185,6 +185,9 @@ const handleSubmit = (e) => {
   }
 
   return (
+
+
+ <Suspense fallback={<div>Loading room details...</div>}>
     <Container maxWidth="xl" sx={bookingStyles.container}>
       <Grid container spacing={2} mt={5}>
         <Grid item xs={12} md={4} sx={bookingStyles.bookingFormContainer}>
@@ -572,6 +575,9 @@ const handleSubmit = (e) => {
 
       <Rooms />
     </Container>
+
+</Suspense>
+
   );
 };
 

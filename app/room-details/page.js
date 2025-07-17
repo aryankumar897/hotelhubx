@@ -51,13 +51,13 @@ const ContentViewPage = () => {
   return (
     <>
  
-<Suspense fallback={<div>Loading...</div>}>
+
       <HotelDetails
         content={content}
         loading={loading}
         setLoading={setLoading}
       />
-      </Suspense>
+     
     </>
   );
 };
