@@ -1,11 +1,17 @@
-const DB_URL = "mongodb://127.0.0.1:27017/hotelhub";
+//const DB_URL = "mongodb://127.0.0.1:27017/hotelhub";
 
 
+ const DB_URL="mongodb+srv://akumar07092000:EiRsmREtieYCQ0Wn@cluster0.1qer0u6.mongodb.net/"
+
+//EiRsmREtieYCQ0Wn
+
+//akumar07092000
+
+//const API = "http://localhost:3000/api";
+
+const API = "https://hotelhubx.vercel.app/api";
 
 
-
-
-const API = "http://localhost:3000/api";
 
 const CLOUDINARY_CLOUD_NAME = "dxhzy8hjp";
 
