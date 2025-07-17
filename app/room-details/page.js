@@ -5,6 +5,7 @@ import { useState, useEffect,Suspense } from "react";
 import HotelDetails from "@/component/Bookingdetails/BookingComponent";
 
 import { useSearchParams } from "next/navigation";
+export const dynamic = 'force-dynamic';
 
 const ContentViewPage = () => {
   const [content, setContent] = useState(null);
