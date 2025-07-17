@@ -1,5 +1,10 @@
 const DB_URL = "mongodb://127.0.0.1:27017/hotelhub";
 
+
+
+
+
+
 const API = "http://localhost:3000/api";
 
 const CLOUDINARY_CLOUD_NAME = "dxhzy8hjp";
