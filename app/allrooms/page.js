@@ -3,5 +3,8 @@
 import Rooms from "@/component/room/Rooms";
 
 export default function Roomss() {
-  return <Rooms />;
+  return (
+
+    <Rooms />
+  )
 }
